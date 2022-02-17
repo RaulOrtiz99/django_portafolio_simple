@@ -5,7 +5,11 @@
 <h2>{{ project.title }}</h2>
     <h3>{{ project.description }}</h3>
     <div>
-    <img src="{{ project.image.url}}" alt="">
+    <img src="{{ project.image.url}}" alt="{{ project.title }}">
     </div>
+   {% if project.url %}
+     <a href="{{ project.url }}">
+        <button>{{ project.url }}</button></a>
+    {% endif %}
 
 {% endfor %}
