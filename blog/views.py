@@ -7,5 +7,5 @@ def render_posts(request):
     return render(request,'posts.html',{'posts':posts})
 
 def post_detail(request,post_id):
-    post=get_object_or_404(Post,pk=post_id)
+    post=get_object_or_404(Post,pk=post_id) #aca obetenemos el objecto con su pk (id)
     return render(request,'post_detail.html',{"post":post})
