@@ -1,8 +1,23 @@
 {% extends 'layout.html' %}
 
 {% block content %}
+ {% load static %}
 
-    <h1>Home</h1>
+    <header class="row bg-black">
+    <div class="col-md-4">
+        <img src="{%static 'portfolio/profile.jpg' %}" class="img-fluid img-thumbnail">
+    </div>
+
+    <div class="col-md-8 my-auto">
+        <h1>Soy raul ortiz</h1>
+        <h3>soy desarrollador backend con python</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum dolor sit amet consectetur adipiscing elit ut aliquam purus. Integer enim neque volutpat ac tincidunt vitae semper. Leo in vitae turpis massa. Velit egestas dui id ornare arcu odio. Porttitor lacus luctus accumsan tortor. Hac habitasse platea dictumst quisque. Tellus in hac habitasse platea dictumst vestibulum rhoncus. Turpis egestas integer eget aliquet nibh praesent tristique magna. Fermentum odio eu feugiat pretium nibh ipsum consequat nisl vel. Velit sed ullamcorper morbi tincidunt ornare massa eget.
+            Dui accumsan sit amet nulla facilisi morbi tempus. Tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula. Viverra ipsum nunc aliquet bibendum. Nulla facilisi cras fermentum odio eu feugiat. Eu sem integer vitae justo eget magna fermentum. Dictum sit amet justo donec enim diam vulputate ut pharetra. Nulla porttitor massa id neque aliquam. Ullamcorper sit amet risus nullam. Augue eget arcu dictum varius duis at. Viverra justo nec ultrices dui sapien. Duis ut diam quam nulla porttitor. Aliquam etiam erat velit scelerisque in dictum non. Lectus mauris ultrices eros in cursus turpis. A iaculis at erat pellentesque. Sed lectus vestibulum mattis ullamcorper velit sed. Turpis egestas integer eget aliquet nibh praesent tristique magna sit. Nec tincidunt praesent semper feugiat nibh. Donec ultrices tincidunt arcu non sodales. At ultrices mi tempus imperdiet nulla malesuada pellentesque elit eget. Sem integer vitae justo eget magna.</p>
+   <a href="https://github.com/RaulOrtiz99" class="btn btn-primary btn-lg rounded-0 my3">Visitar mi Github</a>
+    </div>
+
+
+    </header>
 
 {% for project in projects %}
 
